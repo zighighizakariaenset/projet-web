@@ -1,9 +1,6 @@
-var express = require('express');
-var router = express.Router();
+import articleRoutes from './article'
+import commentRoutes from './comment'
+import categoryRoutes from './category'
+import userRoutes from './user'
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-module.exports = router;
+export { articleRoutes, commentRoutes, categoryRoutes, userRoutes }
