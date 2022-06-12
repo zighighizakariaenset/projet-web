@@ -94,7 +94,7 @@ export default {
                 res.status(500).send({
                     message:
                         error.message ||
-                        `Une erreur sest produite lors de la suppression de user avec lidentifiant==${id}`,
+                        `Une erreur sest produite lors de la suppression de user avec lidentifiant=${id}`,
                 })
             })
     },
